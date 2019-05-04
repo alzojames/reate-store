@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
 import QuickView from "./components/QuickView";
-//import "./scss/style.scss";
+import "./scss/style.scss";
 
 class App extends Component {
   constructor() {
@@ -36,8 +36,8 @@ class App extends Component {
   }
   // Fetch Initial Set of Products from external API
   getProducts() {
-    let API =
-      "http://100.115.92.202:4000/products/";
+    let API = "http://localhost:4000/products/";
+     // "http://100.115.92.202:4000/products/";
     axios.get(API).then(response => {
       console.log(response.data);
       this.setState({
