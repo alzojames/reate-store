@@ -115,8 +115,8 @@ class Header extends Component {
           <div className="brand">
             <img
               className="logo"
-              src="http://codd.cs.gsu.edu/~jndemera2/homeworks/hw6/images/lambo.png"
-              alt="Veggy Brand Logo"
+              src="http://codd.cs.gsu.edu/~jndemera2/homeworks/hw6/images/logo.png"
+              alt="Big Money Rental"
             />
           </div>
 
@@ -151,7 +151,7 @@ class Header extends Component {
               <input
                 type="search"
                 ref="searchBox"
-                placeholder="Search for Vegetables and Fruits"
+                placeholder="Search for your next rental"
                 className="search-keyword"
                 onChange={this.props.handleSearch}
               />

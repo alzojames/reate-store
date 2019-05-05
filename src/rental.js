@@ -4,8 +4,10 @@ import axios from "axios";
 import Header from "./components/Header";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
+import QuickView from "./components/QuickView";
+//import "./scss/style.scss";
 
-class App extends Component {
+class Rental extends Component {
   constructor() {
     super();
     this.state = {
@@ -201,9 +203,15 @@ class App extends Component {
           updateQuantity={this.updateQuantity}
           openModal={this.openModal}
         />
+        <Footer />
+        <QuickView
+          product={this.state.quickViewProduct}
+          openModal={this.state.modalActive}
+          closeModal={this.closeModal}
+        />
       </div>
     );
   }
 }
 
-export default App;
+export default Rental;
